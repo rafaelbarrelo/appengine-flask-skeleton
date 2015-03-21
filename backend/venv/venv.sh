@@ -33,6 +33,7 @@ fi
 
 if [ ! -d apps ]; then
     to_console "Creating symlink on plugins/appengine/apps so apps become visible to Google App Engine"
+    mkdir ../apps
     ln -s ../apps apps
 fi
 
